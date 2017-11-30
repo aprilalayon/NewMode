@@ -1,0 +1,127 @@
+.banner {
+    background-color: #363434;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23%;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+}
+
+.fixed-banner {
+  position: fixed;
+  top:0; 
+    left:0;
+  width: 100%; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+sidebar { 
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border-right: 0.5px solid #eaeaea ;
+    margin-right: 50px;
+}
+
+.main-section { 
+    width: 100%;
+    
+    .tab {
+        padding: 1% 2% 2% 23%;
+        margin-bottom: 0;
+        border-bottom: none;
+        
+        h2 {
+            margin-bottom: 0;
+            padding-top: 20px;
+            color: white;
+        }
+        
+        h3 {
+            margin: 0;
+            color: white;
+        }
+        
+        h3:first-of-type {
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+        
+        h3:last-of-type {
+            padding-bottom: 10px;
+        }
+        
+
+    }
+    
+    .profile {
+        display: flex;
+        flex-direction: row;
+        padding-left: 23%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-top: 0;
+        border-top: 3px solid #e5e9ed;
+        
+        img {
+            display:block; 
+            flex: 1;
+        }
+        
+        p {
+            margin: 0 30px;
+            font-family: $font-par;
+            line-height: 1.5;
+            flex: 2;
+            color: white;
+        }
+        
+        .button-container {
+            flex: 1;
+            align-self: center;
+            text-align: center;
+        }
+        
+        button {
+            border: none;
+            border-radius: none;
+            font-family: $font-main;
+            font-size: 40px;
+            padding: 10px 30px;
+            background-color: white;
+            color: gray;
+            
+        }
+    }
+    
+    .pane01 {
+        background-color: #1c7ea2;
+    }
+    
+    .pane02 {
+        background-color: #137632;
+    }
+    
+    .pane03 {
+        background-color: #e5b208;
+    }
+    
+    .pane04 {
+        background-color: #d84040;
+    }
+    
+    .pane05 {
+        background-color: #8b35aa;
+    }
+}
