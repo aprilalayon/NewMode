@@ -19,7 +19,7 @@ $tabs.click(function() {
 	  $oneProfile.slideDown();
   };
   
-});
+}); 
 
 
 // Thanks for voting 
@@ -44,5 +44,48 @@ $close.click(function(){
     $thankYou.hide();
 });
 
+//Accessibility
+
+function handleBtnClick(event) {
+  toggleButton(event.target);
+}
+
+function toggleButton(element) {
+
+  var pressed = (element.getAttribute("aria-pressed") === "true");
+
+  element.setAttribute("aria-pressed", !pressed);
+
+}
 
 
+//Accordion panels expand when press enter when using tab and keyboard only
+$(".pane01").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#tab-1").click();
+    }
+});
+
+$(".pane02").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#tab-2").click();
+    }
+});
+
+$(".pane03").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#tab-3").click();
+    }
+});
+
+$(".pane04").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#tab-4").click();
+    }
+});
+
+$(".pane05").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#tab-5").click();
+    }
+});
