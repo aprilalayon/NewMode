@@ -42,6 +42,12 @@ sidebar {
         margin-bottom: 0;
         border-bottom: none;
         
+        .fa-caret-down {
+            float: right;
+            margin-right: 5%;
+            color: white;
+        }
+        
         h2 {
             margin-bottom: 0;
             padding-top: 20px;
@@ -123,5 +129,32 @@ sidebar {
     
     .pane05 {
         background-color: #8b35aa;
+    }
+    
+    .dialog {
+            font-family:  $font-main;
+            font-size: 60px;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 3px 3px 3px 3px grey;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        
+        h3 {
+            color: black;
+            line-height: 1.5;
+        }
+        
+        .fa-times {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 40px;
+        }
     }
 }
